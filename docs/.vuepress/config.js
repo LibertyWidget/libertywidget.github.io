@@ -5,8 +5,7 @@ module.exports = {
       ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
     ],
     serviceWorker: true,
-   base: '/', // 这是部署到github相关的配置  使用'/'时
-              //部署到 https://<USERNAME>.github.io  USERNAME=你的用户名
+   base: '/', // 这是部署到github相关的配置  使用'/'时 //部署到 https://<USERNAME>.github.io  USERNAME=你的用户名
      markdown: {
       lineNumbers: true // 代码块显示行号
     },
@@ -19,7 +18,7 @@ module.exports = {
      //导航栏配置
       nav: [
           { text: '首页', link: '/'},
-          { text: 'Python', link: '/python/python.md' },
+          { text: 'Android', link: '/android/' },
           {
             text: '博客',
              
@@ -126,8 +125,6 @@ module.exports = {
                 },
           ]
         }
-        
-          
           },
            
           algolia: {
