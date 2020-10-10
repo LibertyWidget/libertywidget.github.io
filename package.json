@@ -6,7 +6,7 @@
    "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy-gh": "git branch -a && git checkout origin/gh-pages && git add . && git commit -m 'deploy1' && git push"
+    "deploy-gh": "npm run docs:build && git add . && git commit -m 'deploy' && git push && git checkout origin/gh-pages && git add docs/.vuepress/dist/ && git commit -m 'deploy-dist' && git push && git checkout origin/master"
   }, 
   "repository": {
     "type": "git",
