@@ -6,7 +6,7 @@
    "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy-gh": "git branch -a &&git checkout gh-pages && git add . && git commit -m 'deploy' && git push && git branch -a && git checkout master && git add . && git commit -m 'master' && git push "
+    "deploy-gh": "git init && git add . &&git commit -m 'deploy-gh' && git push -f git@github.com:LibertyWidget/libertywidget.github.io.git master:gh-pages"
   }, 
   "repository": {
     "type": "git",
