@@ -7,7 +7,9 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "p": "git init && git add . &&git commit -m 'deploy-gh' && git push",
-    "ps": "git init && git branch -a  && git checkout gh-pages  && git add . &&git commit -m 'deploy-gh' && git push"
+    "ps": "git init && git branch -a  && git checkout gh-pages  && git add . &&git commit -m 'deploy-gh' && git push",
+    "g": "git branch -a  && git checkout gh-pages",
+    "m": "git branch -a  && git checkout master"
   }, 
   "repository": {
     "type": "git",
