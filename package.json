@@ -6,7 +6,7 @@
    "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "s": "git init && git add . &&git commit -m 'deploy-gh' && git push"
+    "s": "git init && git branch -a  && git checkout gh-pages  && git add . &&git commit -m 'deploy-gh' && git push"
   }, 
   "repository": {
     "type": "git",
