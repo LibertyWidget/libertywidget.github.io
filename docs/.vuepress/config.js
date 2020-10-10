@@ -40,7 +40,7 @@ module.exports = {
                 { text: '博客园', link: 'https://www.cnblogs.com/chandlerwong/' },
               ]
             },
-            {text:'关于', link:'/abut.md'},
+            {text:'关于', link:'/about.md'},
       ],
       displayAllHeaders: true, // 默认值：false
       activeHeaderLinks: false, // 默认值：true
