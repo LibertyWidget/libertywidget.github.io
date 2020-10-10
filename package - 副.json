@@ -1,0 +1,23 @@
+{
+  "name": "libertywidget.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "gh": "git init && git branch -a  && git checkout gh-pages  && git add . &&git commit -m 'deploy-gh' && git push",
+    "ms":"git init && git branch -a  && git checkout master  && git add . &&git commit -m 'deploy-master' && git push"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LibertyWidget/libertywidget.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LibertyWidget/libertywidget.github.io/issues"
+  },
+  "homepage": "https://github.com/LibertyWidget/libertywidget.github.io#readme"
+}
