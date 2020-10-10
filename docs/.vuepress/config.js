@@ -51,10 +51,6 @@ module.exports = {
        
       //侧边栏配置
       sidebar: {
-         
-   
-         
-       
            '/index/': [
               // 侧边栏在 /index/ 目录上
               '/index/',

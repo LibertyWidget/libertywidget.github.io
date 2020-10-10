@@ -6,8 +6,8 @@
    "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy-gh": "npm run docs:build && cd docs/.vuepress/dist && git add . && git commit -m 'deploy' && git push -f git@github.com:LibertyWidget/libertywidget.github.io.git master && cd -"
-  },
+    "deploy-gh": "npm run docs:build && git add . && git commit -m 'deploy' && git push "
+  }, 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LibertyWidget/libertywidget.github.io.git"
