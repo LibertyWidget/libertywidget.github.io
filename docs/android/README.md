@@ -7,7 +7,7 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 <figure class="third">
     <div class="features">
         <div class="feature">
-          <a href="http://www.baidu.com" >
+          <a href="/android/ndk" >
             <h2>NDK</h2>
             <p>Native Development kit
 原生开发工具包（NDK）是一组在 Android 应用中利用 C 和 C++ 代码的工具。因为 Java 无法直接调用 C 和 C++ 的代码，想要在 Android 应用中使用原生代码，NDK 便应运而生。</p>
@@ -58,13 +58,13 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
         <div class="feature">
           <a href="http://www.baidu.com" >
             <h2>高级UI</h2>
-            <p></p>
+            <p>自定义动画框架,事件分发,贝塞尔曲线,滤镜,UI绘制流程</p>
           </a>
         </div>
         <div class="feature">
           <a href="http://www.baidu.com" >
             <h2>架构进阶</h2>
-            <p>VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。</p>
+            <p>Canvas,贝塞尔曲线,屏幕适配,meterial design,沉浸式,SVG矢量图形打造不规则的自定义控件,VLayout使用与原理详解</p>
           </a>
         </div>
         <div class="feature">
@@ -76,7 +76,7 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
         <div class="feature">
           <a href="http://www.baidu.com" >
             <h2>面试</h2>
-            <p>各种苦逼问题集合</p>
+            <p>各种苦逼问题集合,ButterKnife 实现原理,HasMap,内存泄漏,RxJava实现原理,组件化，热修复实现原理</p>
           </a>
         </div>
     </div>
