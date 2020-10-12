@@ -1,8 +1,10 @@
 module.exports = {
-  title: '个人文档',
-  description: '去留无意，闲看庭前花开花落；宠辱不惊，漫随天外云卷云舒',
+  title: 'Android-随手笔记',
+  description: '战争结束的时候，国家依然存在，我们还穿着这身军装，那就是胜利。',
   head: [
       ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
+      ["link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" }],
+      ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],// 移动栏优化
     ],
     serviceWorker: true,
    base: '/', // 这是部署到github相关的配置  使用'/'时 //部署到 https://<USERNAME>.github.io  USERNAME=你的用户名
