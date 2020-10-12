@@ -14,7 +14,7 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
           </a>
         </div>
         <div class="feature">
-          <a href="http://www.baidu.com" >
+          <a href="/android/c" >
             <h2>C语言</h2>
             <p>C语言是一门面向过程的、抽象化的通用程序设计语言，广泛应用于底层开发。C语言能以简易的方式编译、处理低级存储器。</p>
           </a>

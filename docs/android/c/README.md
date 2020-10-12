@@ -1,5 +1,6 @@
-## 基本数据类型
-### def
+# C语言
+## 1.基本数据类型
+### Def
 <html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type  content="text/html; charset=gb2312" ><meta name=ProgId  content=Word.Document ><meta name=Generator  content="Microsoft Word 14" ><meta name=Originator  content="Microsoft Word 14" ><title></title><!--[if gte mso 9]><xml><o:DocumentProperties><o:Author>Patrick</o:Author><o:LastAuthor>Patrick</o:LastAuthor><o:Revision>1</o:Revision><o:Pages>1</o:Pages></o:DocumentProperties><o:CustomDocumentProperties><o:KSOProductBuildVer dt:dt="string" >2052-11.1.0.10000</o:KSOProductBuildVer></o:CustomDocumentProperties></xml><![endif]--><!--[if gte mso 9]><xml><o:OfficeDocumentSettings></o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><w:WordDocument><w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel><w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery><w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery><w:DocumentKind>DocumentNotSpecified</w:DocumentKind><w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing><w:View>Web</w:View><w:Compatibility><w:DontGrowAutofit/><w:BalanceSingleByteDoubleByteWidth/><w:DoNotExpandShiftReturn/><w:UseFELayout/></w:Compatibility><w:Zoom>0</w:Zoom></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false"  DefUnhideWhenUsed="true"  DefSemiHidden="true"  DefQFormat="false"  DefPriority="99"  LatentStyleCount="260" >
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Normal" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 1" ></w:LsdException>
@@ -880,34 +881,197 @@ int main()
 ### result
 ``` c++
 type:         ************size**************
-bool:         所占字节数：1    最大值：1        最小值：0
-char:         所占字节数：1    最大值：        最小值：?
-signed char:     所占字节数：1    最大值：        最小值：?
-unsigned char:     所占字节数：1    最大值：?        最小值：
-wchar_t:     所占字节数：4    最大值：2147483647        最小值：-2147483648
-short:         所占字节数：2    最大值：32767        最小值：-32768
-int:         所占字节数：4    最大值：2147483647    最小值：-2147483648
-unsigned:     所占字节数：4    最大值：4294967295    最小值：0
-long:         所占字节数：8    最大值：9223372036854775807    最小值：-9223372036854775808
-unsigned long:     所占字节数：8    最大值：18446744073709551615    最小值：0
-double:     所占字节数：8    最大值：1.79769e+308    最小值：2.22507e-308
-long double:     所占字节数：16    最大值：1.18973e+4932    最小值：3.3621e-4932
-float:         所占字节数：4    最大值：3.40282e+38    最小值：1.17549e-38
-size_t:     所占字节数：8    最大值：18446744073709551615    最小值：0
-string:     所占字节数：24
+bool:               所占字节数：1    最大值：1                      最小值：0
+char:               所占字节数：1    最大值：                       最小值：?
+signed char:        所占字节数：1    最大值：                       最小值：?
+unsigned char:      所占字节数：1    最大值：?                      最小值：
+wchar_t:            所占字节数：4    最大值：2147483647             最小值：-2147483648
+short:              所占字节数：2    最大值：32767                  最小值：-32768
+int:                所占字节数：4    最大值：2147483647             最小值：-2147483648
+unsigned:           所占字节数：4    最大值：4294967295             最小值：0
+long:               所占字节数：8    最大值：9223372036854775807    最小值：-9223372036854775808
+unsigned long:      所占字节数：8    最大值：18446744073709551615   最小值：0
+double:             所占字节数：8    最大值：1.79769e+308           最小值：2.22507e-308
+long double:        所占字节数：16   最大值：1.18973e+4932          最小值：3.3621e-4932
+float:              所占字节数：4    最大值：3.40282e+38            最小值：1.17549e-38
+size_t:             所占字节数：8    最大值：18446744073709551615   最小值：0
+string:             所占字节数：24
 type:         ************size**************
 ```
 
-Nuxt is capable of doing what VuePress does, but it’s designed for building applications. VuePress is focused on content-centric static sites and provides features tailored for technical documentation out of the box.
+## 2.控制台接受输入
+``` C++
+scanf("%d",&i);  //控制台输入，&取地址符
+```
+## 3.指针
+### Def
+``
+    1.指针存储的是变量的内存地址
+    2.内存地址，系统给数据分配的编号（门牌号）
+    3.变量名，对内存空间上的一段数据的抽象
+``
+### Code
+``` C++
+int * p;//int类型的指针
+short *p;//short类型的指针
+long *p;//long类型的指针
+...
+//例如
+    float f = 89.5f;
+	//创建一个float类型的指针
+	float *fp = &f;//&f获取变量地址符
+   //打印内存地址
+	printf("%#x\n", fp);
+```
+## 4.休眠
+``` C++
+Sleep(1000);//毫秒
+```
+## 5.指针类型
+``
+    如果声明一个int的指针 赋值一个double的值装不下 ，所以有指针类型
+``
+<br><br>
+<font color="red"> 1.指针为什么要有类型？</font>
+-   1.指针有类型，地址没有类型<br>
+-   2.地址只是开始的位置，类型读取到什么位置结束
 
-### Docsify / Docute
+## 6.NULL指针
+``` c++
+//不能访问空指针
+int *p = NULL;
+//访问内存地址0x000000操作系统不允许
+//p = 100; //操作系统不允许访问
+```
+## 7.多级指针
+``` c++
+//指针保存的是变量的地址，保存的这个变量还可以是一个指针变量
+//动态内存分配给二维数组
+int a = 50;
+//p1上保存的a的地址
+int* p1 = &a;	
+//p2上保存的p1的地址
+ int** p2 = &p1;
+ //三级指针
+//int*** p3 = &p2;
+```
+## 8.指针运算符
+<font color="red"> 指针的运算，一般在数组遍历时才有意义，基于数组在内存中线性排列的方式</font>
 
-Both are great projects and also Vue-powered. Except they are both fully runtime-driven and therefore not SEO-friendly. If you don’t care for SEO and don’t want to mess with installing dependencies, these are still great choices.
+``` c++
+//数组在内存中连续存储
+int ids[] = { 78, 90, 23, 65, 19 };
+int *p = ids;//ids就是数组的首地址
+p++ 或者 p-- 有效  如不是连续的地址无效
+```
+## 9.通过指针给数组赋值
+``` C++
+int uids[5];//声明长度为5的数组
+int *p =uids;//获取首指针
+int i = 0; //i是数组元素的值
+for (; p < uids + 5; p++){
+    *p = i;
+	i++;
+ }
+ ```
+ ## 10.函数指针
+ ``` C++
+ int msg(char * msg){
+  MessageBox(0,msg,"标题",0);//在界面上面弹框
+  return 0;  
+}
+void main(){
+    //函数指针
+	//函数返回值类型，函数指针的名称，函数的参数列表
+     int(*fun_msg)   (char * msg)  =  msg;
+     fun_msg("消息类容");
+    getchar();
+}
+ ```
+ ## 10.指针传递
+ ``` C++
+ int add(int a,int b){
+	return a + b;
+}
+int msg(int (*fun_msg)(int a ,int b),int m,int n){
+    printf("执行一段代码...\n");
+    printf("执行回调函数...\n");
+    int r = fun_msg(m, n);
+    printf("执行结果：%d\n",r);
+}
+void main(){
+    //加法
+	//int(*func_p)(int a, int b) = add;
+   msg(div, 10, 20); //通过 10.函数指针 演变而来
+}   
+ ```
+## 11.结构体 
+### Def
+    1.结构体就是JAVA中的类
+    2.关键字 struct
+    3.嵌套结构体
+    4.匿名结构体
+### Code
+``` C++
+//第一种 匿名结构体
+struct Man{
+    char name[20];
+    int age;
+}
+//第二种  控制结构体变量的个数（限量版），相当于单例
+struct Man{
+    char name[20];
+    int age;
+} m1
+//第三种
+typedef int Age; //相当于mysql 别名
+//结构体嵌套
+struct Teacher{
+    cahr name[20];
+}
 
-### Hexo
+struct Stu{
+    char name[20];
+    int age;
+    struct Tracher t;  //嵌套
+}
+//结构体嵌套2
+struct Stu{
+    char name[20];
+    int age;
+    struct Teacher{
+        cahr name[20];
+    }
+}
+```
+## 12.结构体与指针
+``` C++
+struct Man{
+	char name[20];
+	int age;
+};
 
-Hexo has been serving the Vue docs well - in fact, we are probably still a long way to go from migrating away from it for our main site. The biggest problem is that its theming system is static and string-based - we want to take advantage of Vue for both the layout and the interactivity. Also, Hexo’s Markdown rendering isn’t the most flexible to configure.
-
-### GitBook
-
-We’ve been using GitBook for most of our sub project docs. The primary problem with GitBook is that its development reload performance is intolerable with a large amount of files. The default theme also has a pretty limiting navigation structure, and the theming system is, again, not Vue based. The team behind GitBook is also more focused on turning it into a commercial product rather than an open-source tool.
+void main(){
+    struct Man m1={"Jack",20};
+    //结构体指针
+	struct Man *p = &m1;
+   printf("%s,%d\n", m1.name, m1.age);
+   //“->”（箭头）是“(*p).”简写形式
+	printf("%s,%d\n", p->name, p->age);
+｝ 
+```
+## 13.指针与结构体数组
+```C++
+struct Man{
+	char name[20];
+	int age;
+};
+//结构体数组
+struct Man mans[] = { {"Jack",20}, {"Rose", 19} };
+//获取指针
+struct Man *p = mans;
+//遍历
+for (; p < mans + 2; p++){
+	printf("%s,%d\n", p->name, p->age);
+}
+```

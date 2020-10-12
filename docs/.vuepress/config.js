@@ -48,7 +48,8 @@ module.exports = {
       activeHeaderLinks: false, // 默认值：true
       //侧边栏配置
       sidebar: {
-        "/android/ndk/": "auto"
+        "/android/ndk/": "auto",
+        "/android/c/": "auto"
       }
      },
 }
